@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/ReactTest/static/css/main.e6c13ad2.css",
-    "main.js": "/ReactTest/static/js/main.bdb44068.js",
+    "main.css": "/ReactTest/static/css/main.c585e1b8.css",
+    "main.js": "/ReactTest/static/js/main.c61927cb.js",
+    "static/media/PeachyLogo.jpg": "/ReactTest/static/media/PeachyLogo.d6ab53af28b880920c2d.jpg",
     "index.html": "/ReactTest/index.html",
-    "main.e6c13ad2.css.map": "/ReactTest/static/css/main.e6c13ad2.css.map",
-    "main.bdb44068.js.map": "/ReactTest/static/js/main.bdb44068.js.map"
+    "main.c585e1b8.css.map": "/ReactTest/static/css/main.c585e1b8.css.map",
+    "main.c61927cb.js.map": "/ReactTest/static/js/main.c61927cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.bdb44068.js"
+    "static/css/main.c585e1b8.css",
+    "static/js/main.c61927cb.js"
   ]
 }
