@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/ReactTest/static/css/main.695200c7.css",
-    "main.js": "/ReactTest/static/js/main.46634cad.js",
+    "main.css": "/ReactTest/static/css/main.500b3439.css",
+    "main.js": "/ReactTest/static/js/main.8d69b450.js",
+    "static/media/leslie_on_holiday.jpg": "/ReactTest/static/media/leslie_on_holiday.522646d01b797859f88d.jpg",
     "static/media/PeachyLogo.jpg": "/ReactTest/static/media/PeachyLogo.d6ab53af28b880920c2d.jpg",
+    "static/media/leslie_in_car.jpg": "/ReactTest/static/media/leslie_in_car.3864afabd011188b25de.jpg",
     "index.html": "/ReactTest/index.html",
-    "main.695200c7.css.map": "/ReactTest/static/css/main.695200c7.css.map",
-    "main.46634cad.js.map": "/ReactTest/static/js/main.46634cad.js.map"
+    "main.500b3439.css.map": "/ReactTest/static/css/main.500b3439.css.map",
+    "main.8d69b450.js.map": "/ReactTest/static/js/main.8d69b450.js.map"
   },
   "entrypoints": [
-    "static/css/main.695200c7.css",
-    "static/js/main.46634cad.js"
+    "static/css/main.500b3439.css",
+    "static/js/main.8d69b450.js"
   ]
 }
