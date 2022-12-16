@@ -40,7 +40,6 @@ h2 {
 }
 .content {
   margin: 40px auto;
-  padding: 20px;
 }
 p {
   padding-bottom: 7px
@@ -89,12 +88,24 @@ padding-top: 10px;
 .footer-social-links a:hover {
   background-position: 0 0;
 }
+.top-container-right{
+  flex-direction:  row-reverse;
+}
+.top-container-left{
+  flex-direction:  row;
+}
+
 .top-container{
   display: flex;
   margin: auto;
   width: 1200px;
   background-color: #f9f9f9;
   padding-bottom: 100px;
+  padding-top: 50px;
+}
+.arrow::before { 
+  content: "\2192";
+  text-decoration:none;
 }
 .top-container-text{
   flex-direction: column;
@@ -127,4 +138,54 @@ text-align: center;
 .intro h2{
   padding-bottom: 50px;
   color: #333;
+}
+.container-cta{
+  background-color: #eb9966;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 3px 15px;
+  color: #FFF;
+  font-weight:bolder;
+  transition: 1s;
+}
+
+.container-cta:hover:After {
+  opacity: 1;
+  right: 10px;
+  content: " >";
+  transition: 1s;
+
+}
+
+.container-cta:hover {
+  background-color: wheat;
+  transition: 1s;
+}
+
+.colouredContainer {
+background-image: url("images/WaynesBackground.svg");
+background-color: #eb9966;
+text-align: center;
+background-size: cover;
+padding: 100px 0;
+}
+
+.colouredContainer p, h1{
+  color: #FFF;
+  padding-bottom: 20px;
+}
+
+
+.colouredContainer  a{
+  background-color: rgb(5, 146, 10);
+  padding: 18px 30px;
+  color: #FFF;
+border-radius: 100px;
+text-decoration: none;
+font-size: 20px;
+margin: auto;
+font-weight: 700;
+display: inline-block;
+
 }

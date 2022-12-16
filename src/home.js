@@ -1,11 +1,29 @@
-import { useState } from "react";
+import TwoPanelImageFeatures from "./TwoPanelImageFeature";
 
 const Home = () => {
-  const [name, setName] = useState("mario");
-
-  const clickHandler = (e) => {
-    setName("wayne");
-  };
+  const twoPanelImageFeatures = [
+    {
+      id: 1,
+      title: "It's time to improve the experience of your employees",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed acmolestie risus, eu maximus dui. Donec vehicula ultriciesconsectetur. Aliquam sed nibh massa. Maecenas arcu nunc, pretium euconsequat eget, mollis id mi.",
+      image: "./images/leslie_on_holiday.jpg",
+      imageAlignment: "left",
+    },
+    {
+      id: 2,
+      title: "It's time to improve the experience of your employees",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed acmolestie risus, eu maximus dui. Donec vehicula ultriciesconsectetur. Aliquam sed nibh massa. Maecenas arcu nunc, pretium euconsequat eget, mollis id mi.",
+      image: "./images/leslie_in_car.jpg",
+      imageAlignment: "right",
+    },
+    {
+      id: 3,
+      title: "Does not show",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed acmolestie risus, eu maximus dui. Donec vehicula ultriciesconsectetur. Aliquam sed nibh massa. Maecenas arcu nunc, pretium euconsequat eget, mollis id mi.",
+      image: "./images/leslie_in_car.jpg",
+      imageAlignment: "right",
+    },
+  ];
 
   return (
     <div className="home">
@@ -20,43 +38,20 @@ const Home = () => {
         </a>
       </div>
 
-      <div className="top-container">
-        <div className="top-container-text">
-          <h2>It's time to improve the experience of your employees</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-            molestie risus, eu maximus dui. Donec vehicula ultricies
-            consectetur. Aliquam sed nibh massa. Maecenas arcu nunc, pretium eu
-            consequat eget, mollis id mi.
-          </p>
-        </div>
-        <div className="top-container-image">
-          <img
-            src={require("./images/leslie_in_car.jpg")}
-            alt="Leslie in car"
-          />
-        </div>
+      <div className="colouredContainer">
+        <h1>Get Experiencing Today</h1>
+        <p>If there was ever a time to do it, today is that day.</p>
+        <a href="">Start now</a>
       </div>
 
-      <div className="top-container">
-        <div className="top-container-image">
-          <img
-            src={require("./images/leslie_on_holiday.jpg")}
-            alt="Leslie in car"
-          />
-        </div>
-        <div className="top-container-text">
-          <h2>It's time to improve the experience of your employees</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-            molestie risus, eu maximus dui. Donec vehicula ultricies
-            consectetur. Aliquam sed nibh massa. Maecenas arcu nunc, pretium eu
-            consequat eget, mollis id mi.
-          </p>
-        </div>
-      </div>
+      <TwoPanelImageFeatures
+        twoPanelImageFeatures={twoPanelImageFeatures.filter(
+          (panel) => panel.id !== 3
+        )}
+      />
+
       <h2>Some stuff about us</h2>
-      <p>{name}</p>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac molestie
         risus, eu maximus dui. Donec vehicula ultricies consectetur. Aliquam sed
@@ -77,7 +72,7 @@ const Home = () => {
         ut iaculis urna. Nam elementum viverra scelerisque. In a odio luctus,
         lacinia turpis vel, bibendum orci. Nulla facilisi.
       </p>
-      <button onClick={clickHandler}>click me test</button>
+      <button>click me test</button>
     </div>
   );
 };
