@@ -27,6 +27,9 @@ const Home = () => {
 
   return (
     <div className="home">
+      <button className="" openModalBtn>
+        Button
+      </button>
       <div className="intro">
         <h2>
           It's an employee's market out there so now is the time to act to
